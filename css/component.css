@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-html, 
+html,
 body,
 .js .container,
 .js .dragslider,
@@ -143,7 +143,7 @@ button.slider-switch:hover {
 	background: #567076;
 	font-size: 16px;
 	white-space: normal;
-	cursor: -webkit-grab; 
+	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -161,7 +161,7 @@ button.slider-switch:hover {
 }
 
 .img-dragger .slide:active {
-	cursor: -webkit-grabbing; 
+	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
 }
 
@@ -358,6 +358,10 @@ button.content-switch::before {
 	color: #95a5a6;
 }
 
+.pages .content .photo {
+  margin-bottom: 48px;
+}
+
 .pages .content p {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -374,7 +378,8 @@ button.content-switch::before {
 }
 
 .js .pages .content h2,
-.js .pages .content p {
+.js .pages .content p,
+.js .pages .content .photo {
 	-webkit-transform: translate3d(0,200px,0);
 	transform: translate3d(0,200px,0);
 	-webkit-transition-property: opacity;
@@ -386,7 +391,8 @@ button.content-switch::before {
 }
 
 .pages .content.show h2,
-.pages .content.show p {
+.pages .content.show p,
+.pages .content.show .photo {
 	-webkit-transition-duration: 1s;
 	transition-duration: 1s;
 	-webkit-transition-property: -webkit-transform, opacity;
@@ -396,6 +402,11 @@ button.content-switch::before {
 }
 
 .pages .content.show p {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.pages .content.show .photo {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
@@ -407,6 +418,22 @@ button.content-switch::before {
 
 .pages .content a:hover {
 	color: #545b61;
+}
+
+.pages .content.show .photo {
+  display: inline-block;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.pages .content.show .photo img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
 /* Switch */
