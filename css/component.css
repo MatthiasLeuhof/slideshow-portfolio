@@ -449,8 +449,8 @@ button.content-switch::before {
   object-fit: cover;
 }
 
-.pages .content .related {
-	display: none;
+.margin-top-bottom {
+  margin: 60px 0;
 }
 
 /* Switch */
