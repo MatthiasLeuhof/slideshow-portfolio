@@ -371,10 +371,24 @@ button.content-switch::before {
 	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
+.pages .content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .pages .content p:last-child {
 	padding: 5em 1em 8em;
 	text-align: center;
 	font-weight: bold;
+}
+
+.pages .content .full-width-img {
+  width: 100%;
+  display: inline-block;
+}
+
+.pages .content .full-width-img img {
+  width: 100%;
 }
 
 .js .pages .content h2,
@@ -426,7 +440,6 @@ button.content-switch::before {
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  background-color: blue;
   overflow: hidden;
 }
 
@@ -434,6 +447,10 @@ button.content-switch::before {
   height: 200px;
   width: 200px;
   object-fit: cover;
+}
+
+.pages .content .related {
+	display: none;
 }
 
 /* Switch */
